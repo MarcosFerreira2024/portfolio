@@ -21,12 +21,12 @@ function Header() {
   return (
     <header className='fixed top-5 left-0 right-0 z-10'>
         <nav >
-            <ul className='flex justify-between  max-w-container mx-auto'>
+            <ul className='flex justify-between max-w-container mx-5 sm:mx-auto'>
                 <li>
                     <HeaderSvgSun className='' />
                 </li>
 
-                <nav className='flex gap-5'>
+                <nav className='flex gap-[15px]'>
                     {liNav.map((item,i)=>(
                         <li key={i}> <Link href={`/${item.slug}`}><h1 className='text-subtitle font-subtitle '>{item.text}</h1></Link></li>
                     ))}
