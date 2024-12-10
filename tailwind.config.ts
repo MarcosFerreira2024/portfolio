@@ -11,6 +11,20 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        title: "var(--title)",
+        subtitle: "var(--subtitle)",
+        border: "var(--border)",
+      },
+      fontSize:{
+        title: ["var(--font-title)", "1.2"], 
+        subtitle: ["var(--font-subtitle)", "1.25"], 
+      },
+      maxWidth:{
+        container: "var(--container)"
+      },
+      fontFamily: {
+        subtitle: ['"Roboto Mono"', "monospace"],
+        title: ['"Poppins"', "sans-serif"],
       },
     },
   },
