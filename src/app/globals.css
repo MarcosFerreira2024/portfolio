@@ -10,13 +10,16 @@
   --font-title: 2.5rem;
   --font-subtitle: 1rem;
   --container: 45.25rem;
+  --menu: rgba(0, 0, 0, 0.125)
+  
 }
 
 .dark {
   --background: #0C0A09;
-  --title: #7E22CE;
+  --title: #7e22ce;
   --subtitle: #9333EA;
   --border: #5B21B6;
+  --menu: rgba(255,255,255,0.02)
 }
 
 body {
@@ -41,4 +44,7 @@ body {
   to{
     transform: translateX(calc(-100% - 12px));
   }
+}
+
+.sombraMenu {box-shadow: inset 5px 5px 5px 0px var(--menu);
 }
