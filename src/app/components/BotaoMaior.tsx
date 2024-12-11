@@ -9,9 +9,10 @@ interface iProps extends React.ButtonHTMLAttributes<HTMLButtonElement>{
    
 }
 function BotaoMaior({label, classes, src, alt, ...props}:iProps) {
+  const styles =`${classes}  dark:hover:bg-purple-700 dark:hover:text-white text-subtitle font-subtitle border-title border-[0.0938rem] rounded-[0.4688rem] h-[39px] ` 
   return (
     <>
-        <button {...props} className={` ${classes} justify-between dark:hover:bg-purple-700 order-1 sm:-order-none dark:hover:text-white group transition-colors ease-linear duration-500 min-w-full order-0 sm:min-w-[12.8125rem] items-center h-[39px] px-2 flex  text-subtitle font-subtitle border-title border-[0.0938rem] rounded-[0.4688rem]  `}><h1>{label}</h1> <Image className='group-hover:dark:invert group-hover:dark:brightness-0 transition-colors ease-linear duration-500' src={src} alt={alt} width={18} height={18} /></button>
+        <button {...props} className={` ${styles} group transition-colors ease-linear duration-500  items-center  px-2 flex `}><h1>{label}</h1> <Image className='group-hover:dark:invert group-hover:dark:brightness-0 transition-colors ease-linear duration-500' src={src} alt={alt} width={18} height={18} /></button>
     </>
   )
 }
