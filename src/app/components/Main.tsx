@@ -8,7 +8,7 @@ import { skills } from '../data/skills'
 function Main() {
     const [anima,setAnima] = React.useState(true)
   return (
-    <main className='max-w-container mx-auto sm:pt-[160px] text-subtitle pt-[120px] ' >
+    <main className='max-w-container mx-auto sm:pt-[180px] text-subtitle pt-[120px] ' >
         <section className='grid sm:grid-cols-2 justify-center sm:gap-0 gap-5  mx-auto' >
             <div>
                 <Image src={`/Main/profile.png`} quality={100} priority alt='profile picture' height={300} width={300} className='w-[200px] sm:w-[300px] sm:h-[300px] transition-none hover:opacity-95 hover:rotate-1 transition-all ease-linear duration-300 rounded-full mx-auto sm:mx-0   ' />
