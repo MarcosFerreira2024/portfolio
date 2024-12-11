@@ -5,17 +5,18 @@
 :root {
   --background: #ffffff;
   --title: #9333EA;
-  --subtitle:#A855F7; 
-  --border:#7E22CE; 
-  --font-title: 2.5rem; 
-  --font-subtitle: 1rem; 
-  --container:45.25rem; 
+  --subtitle: #A855F7;
+  --border: #7E22CE;
+  --font-title: 2.5rem;
+  --font-subtitle: 1rem;
+  --container: 45.25rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0C0A09;
-  }
+.dark {
+  --background: #0C0A09;
+  --title: #7E22CE;
+  --subtitle: #9333EA;
+  --border: #5B21B6;
 }
 
 body {

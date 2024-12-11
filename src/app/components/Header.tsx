@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import { HeaderSvgSun } from './HeaderSvg'
+import ThemeSwitcher from './ThemeSwitcher'
 
 
 const liNav = [{
@@ -23,7 +23,7 @@ function Header() {
         <nav >
             <ul className='flex justify-between max-w-container mx-5 sm:mx-auto'>
                 <li>
-                    <HeaderSvgSun className='' />
+                    <ThemeSwitcher />
                 </li>
 
                 <nav className='flex gap-[15px]'>
