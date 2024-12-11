@@ -7,8 +7,8 @@ export function HeaderSvgSun({ classes , ...props }: props) {
   return (
     <button  {...props}>
       <svg
-        width="18"
-        height="18"
+        width="20"
+        height="20"
         className={classes}
         viewBox="0 0 18 18"
         fill="none"
@@ -33,9 +33,9 @@ export function HeaderSvgMoon({ classes ,...props }: props) {
   return (
     <button {...props}>
       <svg
-        width="18"
+        width="20"
         className={classes}
-        height="18"
+        height="20"
         viewBox="0 0 18 18"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
