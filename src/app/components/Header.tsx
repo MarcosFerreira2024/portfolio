@@ -25,6 +25,7 @@ function Header() {
   const menu = useRef<HTMLDivElement>(null)
   function handleMenu(){
     menu.current?.classList.toggle("translate-x-[100vw]")
+    menu.current?.classList.toggle("sm:hidden")
   }
 
   return (
@@ -34,7 +35,7 @@ function Header() {
           <ThemeSwitcher />
         </div>
         {/*menu mobile */}
-        <div ref={menu} className="min-w-[100vw] transition-all ease-in-out duration-500 translate-x-[100vw] max-w-container flex absolute top-0 left-0 right-0    mx-auto  h-[100vh] ">
+        <div ref={menu} className="min-w-[100vw] sm:hidden transition-all ease-in-out duration-500 translate-x-[100vw] max-w-container flex absolute top-0 left-0 right-0    mx-auto  h-[100vh] ">
           <div
             className="flex-1  "
             onClick={handleMenu}
