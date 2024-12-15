@@ -10,7 +10,7 @@ function Main() {
     const [sobre,setSobre] = React.useState(false)
   return (
     
-    <main className='max-w-container mx-auto sm:pt-[180px] text-subtitle pt-[120px] ' >
+    <main className='max-w-container mx-auto sm:pt-[180px] text-subtitle pt-[120px]  ' >
         <section className='grid sm:grid-cols-2 justify-center gap-5 sm:gap-0   mx-auto my-auto h-[400px]   sm:h-[460px]' >
             <div>
                 <Image src={`/Main/profile.png`} quality={100} priority alt='profile picture' height={300} width={300} className='w-[200px] sm:w-[300px] sm:h-[300px] transition-none hover:opacity-95 hover:rotate-1 transition-all ease-linear duration-300 rounded-full mx-auto sm:mx-0   ' />
@@ -41,7 +41,7 @@ function Main() {
             </div>
            
         </section>
-        <section className={`mt-60 sm:mt-5`}>
+        <section className={`mt-60 sm:mt-5   pb-5 `}>
             <div className='max-w-container gap-3 flex overflow-hidden ' >
                 <ul  className={`flex gap-3    ${anima?"animationSkills":"animationSkillsPaused"}`}>
                     {skills.map((item,id)=>(
