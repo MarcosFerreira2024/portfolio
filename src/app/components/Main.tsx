@@ -10,7 +10,7 @@ function Main() {
   const [sobre, setSobre] = React.useState(false);
   return (
     <main className="max-w-container mx-auto md:pt-[180px] text-subtitle pt-[120px]  ">
-      <section className="grid md:grid-cols-2 justify-center gap-5 md:gap-0   mx-auto my-auto h-[400px]   md:h-[460px]">
+      <section className="grid md:grid-cols-2 justify-center gap-5 md:gap-0   mx-auto my-auto ">
         <div>
           <Image
             src={`/Main/profile.png`}
@@ -57,7 +57,7 @@ function Main() {
                 />
               </div>
             </div>
-            <div className="flex ">
+            <div className="flex relative ">
               <BotaoMaior
                 onClick={() => setSobre(!sobre)}
                 classes={`w-[206px] justify-between`}
@@ -65,25 +65,25 @@ function Main() {
                 src={`/Main/sobre.svg`}
                 alt="perfil"
               />
+              {sobre && (
+                <p className="text-left absolute top-10 font-title text-md animaTexto max-w-[370px] md:max-w-full   ">
+                  Busco uma oportunidade de{" "}
+                  <strong className="font-semibold">Estágio</strong>. Possuo
+                  conhecimento em{" "}
+                  <strong className="font-semibold">Desenvolvimento Web</strong>
+                  , além de experiência prática em criar sites responsivos
+                  focados na experiência dos usuários. Atualmente estou
+                  estudando <strong className="font-semibold">Next.js </strong>e{" "}
+                  <strong className="font-semibold">Node</strong>. Sou uma
+                  pessoa comunicativa, gosto de trabalhar em equipe e priorizo a
+                  qualidade e rapidez no desenvolvimento de softwares.
+                </p>
+              )}
             </div>
-            {sobre && (
-              <p className="text-left font-title text-md animaTexto max-w-[370px] md:max-w-full   ">
-                Busco uma oportunidade de{" "}
-                <strong className="font-semibold">Estágio</strong>. Possuo
-                conhecimento em{" "}
-                <strong className="font-semibold">Desenvolvimento Web</strong>,
-                além de experiência prática em criar sites responsivos focados
-                na experiência dos usuários. Atualmente estou estudando{" "}
-                <strong className="font-semibold">Next.js </strong>e{" "}
-                <strong className="font-semibold">Node</strong>. Sou uma pessoa
-                comunicativa, gosto de trabalhar em equipe e priorizo a
-                qualidade e rapidez no desenvolvimento de softwares.
-              </p>
-            )}
           </nav>
         </div>
       </section>
-      <section className={`mt-60 md:mt-5   pb-5 `}>
+      <section className={`mt-48 md:mt-28   pb-5 `}>
         <div className="max-w-container gap-3 flex overflow-hidden ">
           <ul
             className={`flex gap-3    ${
