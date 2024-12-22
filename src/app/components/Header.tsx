@@ -29,7 +29,7 @@ function Header() {
   }
 
   return (
-    <header className="fixed z-50 top-0 left-0 right-0">
+    <header className="fixed bg-background z-50 top-0 left-0 right-0">
       <nav className="flex   max-w-container justify-between font-subtitle  text-subtitle mx-auto ">
         <div className="md:flex-1 py-5 px-5 md:px-0 z-20  items-center md:flex ">
           <ThemeSwitcher />
@@ -55,7 +55,7 @@ function Header() {
               {liNav.map((data, id) => (
                 <li key={id}>
                   <Link href={`/${data.slug}`}>
-                    <h1 className="hover:text-purple-600 text-xl dark:hover:text-white transition-colors ease-in-out duration-300 ">
+                    <h1 className="hover:text-purple-700 text-xl dark:hover:text-white transition-colors ease-in-out duration-300 ">
                       {data.text}
                     </h1>
                   </Link>
@@ -69,16 +69,16 @@ function Header() {
           onClick={handleMenu}
           className="flex cursor-pointer group  px-5 md:hidden py-5 flex-col gap-1.5"
         >
-          <div className="w-6 self-end group-hover:dark:bg-white group-hover:bg-purple-700  transition-all ease-in-out duration-300  h-[2px] bg-title rounded-[2px]"></div>
-          <div className="w-5 h-[2px] group-hover:dark:bg-white  group-hover:bg-purple-700 transition-all ease-in-out duration-300 self-end bg-title rounded-[2px]"></div>
-          <div className="w-4 self-end group-hover:dark:bg-white group-hover:bg-purple-700 transition-all ease-in-out duration-300 h-[2px] bg-title rounded-[2px]"></div>
+          <div className="w-6 self-end group-hover:dark:bg-white group-hover:bg-purple-800  transition-all ease-in-out duration-300  h-[2px] bg-title rounded-[2px]"></div>
+          <div className="w-5 h-[2px] group-hover:dark:bg-white  group-hover:bg-purple-800 transition-all ease-in-out duration-300 self-end bg-title rounded-[2px]"></div>
+          <div className="w-4 self-end group-hover:dark:bg-white group-hover:bg-purple-800 transition-all ease-in-out duration-300 h-[2px] bg-title rounded-[2px]"></div>
         </div>
         {/*Itens NavBar */}
         <ul className="md:flex hidden flex-1 items-center  justify-between  ">
           {liNav.map((data, id) => (
             <li key={id}>
               <Link href={`/${data.slug}`}>
-                <h1 className="hover:text-purple-600 transition-colors ease-in-out duration-300 dark:hover:text-purple-500">
+                <h1 className="hover:text-purple-700 transition-colors ease-in-out duration-300 dark:hover:text-purple-500">
                   {data.text}
                 </h1>
               </Link>

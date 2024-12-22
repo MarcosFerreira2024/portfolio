@@ -4,22 +4,21 @@
 
 :root {
   --background: #ffffff;
-  --title: #9333EA;
-  --subtitle: #A855F7;
-  --border: #7E22CE;
+  --title: #9333ea;
+  --subtitle: #a855f7;
+  --border: #7e22ce;
   --font-title: 2.5rem;
   --font-subtitle: 1rem;
   --container: 45.25rem;
-  --menu: rgba(0, 0, 0, 0.125)
-  
+  --menu: rgba(0, 0, 0, 0.02);
 }
 
 .dark {
-  --background: #0C0A09;
+  --background: #0c0a09;
   --title: #7e22ce;
-  --subtitle: #9333EA;
-  --border: #5B21B6;
-  --menu: rgba(255,255,255,0.02)
+  --subtitle: #9333ea;
+  --border: #5b21b6;
+  --menu: rgba(255, 255, 255, 0.02);
 }
 
 body {
@@ -27,38 +26,39 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.animationSkills{
-  animation: animaSkills 20s linear forwards infinite ;
+.animationSkills {
+  animation: animaSkills 20s linear forwards infinite;
   animation-play-state: running;
 }
 
 .animationSkillsPaused {
-  animation: animaSkills 20s linear forwards infinite ;
+  animation: animaSkills 20s linear forwards infinite;
   animation-play-state: paused;
 }
 
-@keyframes animaSkills{
-  from{
+@keyframes animaSkills {
+  from {
     transform: translateX(0);
   }
-  to{
+  to {
     transform: translateX(calc(-100% - 12px));
   }
 }
 
-.sombraMenu {box-shadow: inset 5px 5px 5px 0px var(--menu);
+.sombraMenu {
+  box-shadow: inset 5px 5px 5px 0px var(--menu);
 }
 
-.animaTexto{
-  animation: animacaoTexto 0.3s ease-in-out ;
+.animaTexto {
+  animation: animacaoTexto 0.3s ease-in-out;
 }
 
-@keyframes animacaoTexto{
-  from{
+@keyframes animacaoTexto {
+  from {
     opacity: 0;
-    transform: translateY(-20px) ;
+    transform: translateY(-20px);
   }
-  to{
+  to {
     opacity: 1;
   }
 }
