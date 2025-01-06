@@ -1,7 +1,10 @@
+import Projeto from "@/app/components/Projeto";
 import React from "react";
 
 function page() {
-  return <div>teste</div>;
+  return <>
+    <Projeto />
+  </>;
 }
 
 export default page;
