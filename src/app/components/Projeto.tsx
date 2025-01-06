@@ -27,7 +27,7 @@ function Projeto() {
             <div key={projeto.id} className='md:grid gap-5 md:gap-0 flex flex-col  items-center md:items-start  md:grid-cols-2'>
                 <div className='flex flex-col max-w-[300px] '>
                     <div className='flex gap-2 pb-2'>
-                        <BotaoMaior label={projeto.titulo} href={projeto.liveUrl} target="_blank" classes="justify-between transition-colors flex-1 md:flex-initial md:min-w-[240px] md:max-w-[240px] text-lg font-title" alt="ver certificiado" src="/Geral/seta.svg" className="" />
+                        <BotaoMaior label={projeto.titulo} href={projeto.liveUrl} target="_blank" classes="justify-between transition-colors flex-1 md:flex-initial md:min-w-[240px] md:max-w-[240px] text-lg font-title" alt="ver certificiado" src="/Geral/Seta.svg" className="" />
                         <BotaoMenor alt={projeto.titulo} href={projeto.githubUrl} target="_blank" src='/Main/github.svg'/>
                     </div>
                     <div className='md:min-h-[300px] md:max-h-[300px]'>
