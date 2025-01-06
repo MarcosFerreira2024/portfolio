@@ -3,6 +3,7 @@ import Link from "next/link";
 import React, { useRef } from "react";
 import ThemeSwitcher from "./ThemeSwitcher";
 import Image from "next/image";
+
 export const liNav = [
   {
     slug: "",
@@ -21,6 +22,7 @@ export const liNav = [
     text: "Contato",
   },
 ];
+
 function Header() {
   const menu = useRef<HTMLDivElement>(null);
   function handleMenu() {
@@ -29,7 +31,7 @@ function Header() {
   }
 
   return (
-    <header className="fixed transition-colors duration-300 ease-linear bg-background z-50 top-0 left-0 right-0">
+    <header className="fixed  transition-colors duration-300 ease-linear bg-background z-50 top-0 left-0 right-0">
       <nav className="flex   max-w-container justify-between font-subtitle  text-subtitle mx-auto ">
         <div className="md:flex-1 py-5 px-5 md:px-0 z-20  items-center md:flex ">
           <ThemeSwitcher />
