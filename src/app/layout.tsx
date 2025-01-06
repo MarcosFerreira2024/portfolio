@@ -28,7 +28,9 @@ export default function RootLayout({
           defaultTheme="system"
         >
           <Header />
-          {children}
+          <div className="md:pt-[180px] max-w-container text-subtitle mx-auto pt-[120px]">
+            {children}
+          </div>
         </ThemeProvider>
       </body>
     </html>
