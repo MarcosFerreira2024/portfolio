@@ -1,15 +1,15 @@
 "use client";
 import Image from "next/image";
 import React from "react";
+import { skills } from "../data/skills";
 import BotaoMaior from "./BotaoMaior";
 import BotaoMenor from "./BotaoMenor";
-import { skills } from "../data/skills";
 
 function Main() {
   const [anima, setAnima] = React.useState(true);
   const [sobre, setSobre] = React.useState(false);
   return (
-    <main className="max-w-container mx-auto md:pt-[180px] text-subtitle pt-[120px]  ">
+    <main>
       <section className="grid md:grid-cols-2 justify-center gap-5 md:gap-0   mx-auto my-auto ">
         <div>
           <Image
@@ -84,7 +84,7 @@ function Main() {
         </div>
       </section>
       <section className={`mt-48 md:mt-28   pb-5 `}>
-        <div className="max-w-container gap-3 flex overflow-hidden ">
+        <div className="max-w-container  gap-3 flex overflow-hidden ">
           <ul
             className={`flex gap-3    ${
               anima ? "animationSkills" : "animationSkillsPaused"
