@@ -8,6 +8,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Projetos } from '../types/apiTypes';
 import { useTheme } from 'next-themes';
+import Loading from './Loading';
 
 function Projeto() {
     const [data,setData] = useState<Projetos[]|null>(null)
@@ -50,7 +51,7 @@ function Projeto() {
                 </div>
 
             </div>
-        )):null}
+        )):<Loading />}
       
     </section>
   )
