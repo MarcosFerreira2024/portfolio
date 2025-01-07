@@ -1,13 +1,26 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import { skills } from "../data/skills";
 import BotaoMaior from "./BotaoMaior";
 import BotaoMenor from "./BotaoMenor";
+import { getCertificados, getProjetos } from "../utils/fetch";
 
 function Main() {
   const [anima, setAnima] = React.useState(true);
   const [sobre, setSobre] = React.useState(false);
+  useEffect(()=>{
+   async function fetchData(){
+      const dataCertificados = await getCertificados()
+      const dataProjetos = await getProjetos()
+       if(dataCertificados&&dataProjetos){
+         localStorage.setItem("dataCertificados",JSON.stringify(dataCertificados))
+         localStorage.setItem("dataProjetos",JSON.stringify(dataProjetos))
+
+       }
+   }
+    fetchData()
+  },[])
   return (
     <main>
       <section className="grid md:grid-cols-2 justify-center gap-5 md:gap-0   mx-auto my-auto ">
