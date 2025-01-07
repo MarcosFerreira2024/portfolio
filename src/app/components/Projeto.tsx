@@ -23,9 +23,9 @@ function Projeto() {
         
     },[])
   return (
-    <section className='flex flex-col gap-10'>
-        {data?data.map((projeto)=>(
-            <div key={projeto.id} className='md:grid gap-5 md:gap-0 flex flex-col  items-center md:items-start  md:grid-cols-2'>
+    <section className='flex flex-col gap-20 md:gap-4'>
+        {data?data.map((projeto,index)=>(
+            <div key={projeto.id} className='md:grid gap-5  md:gap-0 flex flex-col  items-center md:items-start  md:grid-cols-2'>
                 <div className='flex flex-col max-w-[300px] '>
                     <div className='flex gap-2 pb-2'>
                         <BotaoMaior label={projeto.titulo} href={projeto.liveUrl} target="_blank" classes="justify-between transition-colors flex-1 md:flex-initial md:min-w-[240px] md:max-w-[240px] text-lg font-title" alt="ver certificiado" src="/Geral/Seta.svg" className="" />
@@ -36,7 +36,7 @@ function Projeto() {
                         <ul className='flex gap-2 items-center'>
                             {projeto.skillsPath.map((skill,i)=>(
                                 <li  key={i}>
-                                    <Image alt={projeto.skills[i]}  src={skill} width={20} height={20} />
+                                    <Image alt={projeto.skills[i]}  className='max-h-[18px] dark:hover:brightness-0 hover:brightness-75 duration-300 ease-in-out dark:hover:invert min-h-[18px]' src={skill} width={18} height={18} />
                                 </li>
                             ))}
                         </ul>
@@ -45,13 +45,15 @@ function Projeto() {
                 </div>
                 <div className='flex start'>
                     <div>
-                    <Link href={projeto.liveUrl} target="_blank">  <Image quality={100} alt={projeto.titulo} className='border-title hover:opacity-85 transition-all duration-300 ease-in-out border-[2px] md:max-w-[100%] max-w-[300px] object-cover  rounded-[7.5px]' src={projeto.photoDark && resolvedTheme === 'dark'?projeto.photoDark:projeto.photo} width={1440}  height={1440} /></Link>
+                    <Link href={projeto.liveUrl} target="_blank">  <Image quality={100} alt={projeto.titulo} className='border-title hover:opacity-90 transition-colors duration-300 ease-in-out border-[2px] md:max-w-[100%] max-w-[300px] object-cover  rounded-[7.5px]' src={projeto.photoDark && resolvedTheme === 'dark'?projeto.photoDark:projeto.photo} width={1440}  height={1440} /></Link>
                     </div>
 
                 </div>
-
+            {data.length===index+1?<div className=' col-span-2 text-center'><h1>Mais Projetos No Futuro</h1></div>:null}
             </div>
+
         )):<Loading />}
+        
       
     </section>
   )
