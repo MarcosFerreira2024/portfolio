@@ -1,8 +1,10 @@
 "use client";
 import Link from "next/link";
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import ThemeSwitcher from "./ThemeSwitcher";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
+import path from "path";
 
 export const liNav = [
   {
@@ -29,6 +31,7 @@ function Header() {
     menu.current?.classList.toggle("translate-x-[100vw]");
     menu.current?.classList.toggle("md:hidden");
   }
+  const pathName = usePathname()
 
   return (
     <header className="fixed  transition-colors duration-300 ease-linear bg-background z-50 top-0 left-0 right-0">
@@ -43,7 +46,7 @@ function Header() {
         >
           <div className="flex-1  " onClick={handleMenu}></div>
           {/*itens Navbar do menu mobile */}
-          <div className="w-[60%] max-w-[400px]  text-subtitle py-5 sombraMenu bg-background">
+          <div className="w-[60%] max-w-[400px]   py-5 sombraMenu bg-background">
             <ul className="flex flex-col gap-5  text-center">
               <div className="flex justify-center " onClick={handleMenu}>
                 <Image
@@ -56,10 +59,10 @@ function Header() {
               </div>
               {liNav.map((data, id) => (
                 <li key={id}>
-                  <Link href={`/${data.slug}`}>
-                    <h1 className="hover:text-purple-700 text-xl dark:hover:text-white transition-colors ease-in-out duration-300 ">
+                  <Link  href={`/${data.slug}`}>
+                   <h1  className={`${data.slug===pathName.replace("/","")?"underline underline-offset-[6px] decoration-[1.5px] ":""} hover:text-purple-700 text-xl   dark:hover:text-white transition-colors ease-in-out duration-300 `}>
                       {data.text}
-                    </h1>
+                   </h1>
                   </Link>
                 </li>
               ))}
@@ -80,7 +83,7 @@ function Header() {
           {liNav.map((data, id) => (
             <li key={id}>
               <Link href={`/${data.slug}`}>
-                <h1 className="hover:text-purple-700 transition-colors ease-in-out duration-300 dark:hover:text-purple-500">
+                <h1  className={`${data.slug===pathName.replace("/","")?"underline underline-offset-[6px] decoration-[1.5px] ":""} hover:text-purple-700 transition-colors ease-in-out duration-300 dark:hover:text-purple-500`}>
                   {data.text}
                 </h1>
               </Link>
