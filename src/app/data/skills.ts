@@ -15,6 +15,16 @@ export const skills = [
         alt: 'Ícone TypeScript',
     },
     {
+        nome: 'NodeJs',
+        iconPath: '/Main/nodejs.svg',
+        alt: 'Ícone NodeJs',
+    },
+    {
+        nome: "MongoDB",
+        iconPath: "/Main/mongodb.svg",
+        alt: "Ícone mongoDB",
+    },
+    {
         nome: 'JavaScript',
         iconPath: '/Main/javascript.svg',
         alt: 'Ícone JavaScript',
