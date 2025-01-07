@@ -1,10 +1,9 @@
 "use client";
 import Link from "next/link";
-import React, { useEffect, useRef } from "react";
+import React, {  useRef } from "react";
 import ThemeSwitcher from "./ThemeSwitcher";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import path from "path";
 
 export const liNav = [
   {
