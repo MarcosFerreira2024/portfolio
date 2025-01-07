@@ -13,6 +13,7 @@ import Loading from './Loading';
 function Projeto() {
     const [data,setData] = useState<Projetos[]|null>(null)
     const { resolvedTheme } = useTheme()
+    console.log(JSON.parse(localStorage.getItem("dataProjetos") as string))
     useEffect(()=>{
         if(localStorage.getItem("dataProjetos")){
             setData(JSON.parse(localStorage.getItem("dataProjetos") as string))
@@ -50,7 +51,7 @@ function Projeto() {
                 </div>
                 <div className='flex start'>
                     <div>
-                    <Link href={projeto.liveUrl} target="_blank">  <Image quality={100} alt={projeto.titulo} className='border-title hover:opacity-90 transition-colors duration-300 ease-in-out border-[2px] md:max-w-[100%] max-w-[300px] object-cover  rounded-[7.5px]' src={projeto.photoDark && resolvedTheme === 'dark'?projeto.photoDark:projeto.photo} width={1440}  height={1440} /></Link>
+                    <Link href={projeto.liveUrl} target="_blank">  <Image quality={100} alt={projeto.titulo} className='border-title max-h-[209px] md:max-h-[245px]  hover:opacity-90 transition-colors duration-300 ease-in-out border-[2px] md:max-w-[100%] max-w-[300px] object-cover  rounded-[7.5px]' src={projeto.photoDark && resolvedTheme === 'dark'?projeto.photoDark:projeto.photo} width={1440}  height={1440} /></Link>
                     </div>
 
                 </div>
