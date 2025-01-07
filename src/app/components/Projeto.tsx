@@ -14,13 +14,18 @@ function Projeto() {
     const [data,setData] = useState<Projetos[]|null>(null)
     const { resolvedTheme } = useTheme()
     useEffect(()=>{
-        async function fetchData(){
-            const data = await getProjetos()
-            setData(data)
+        if(localStorage.getItem("dataProjetos")){
+            setData(JSON.parse(localStorage.getItem("dataProjetos") as string))
+            return
         }
-        fetchData()
-        
-        
+            async function fetchData(){
+                const data = await getProjetos()
+                if(data){
+                    localStorage.setItem("dataProjetos",JSON.stringify(data))
+                    setData(data)
+                }
+            }
+            fetchData()
     },[])
   return (
     <section className='flex flex-col gap-20 md:gap-4'>
