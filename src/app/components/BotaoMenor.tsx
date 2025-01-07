@@ -23,7 +23,7 @@ function BotaoMenor({
       <Link
         href={href}
         target="_blank"
-        className={`${classes}    transition-all w-[39px] h-[39px] group border-purple-700 dark:border-title border-[2px]   rounded-[7.5px] flex items-center justify-center   dark:bg-transparent hover:bg-purple-600   ease-linear duration-300`}
+        className={`${classes}   hover:bg-title transition-all w-[39px] h-[39px] group border-purple-700 dark:border-title border-[2px]   rounded-[7.5px] flex items-center justify-center   dark:bg-transparent    ease-linear duration-300`}
         {...props}
       >
         <Image

@@ -30,7 +30,7 @@ function BotaoMaior({
     >
       <h1>{label}</h1>
       <Image
-        className="group-hover:invert group-hover:brightness-0 transition-all ease-in duration-[150ms]"
+        className="group-hover:invert group-hover:brightness-0 max-h-[18px] transition-all ease-in duration-[150ms]"
         src={src}
         alt={alt}
         width={18}
