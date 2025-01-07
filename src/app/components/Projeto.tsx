@@ -13,7 +13,6 @@ import Loading from './Loading';
 function Projeto() {
     const [data,setData] = useState<Projetos[]|null>(null)
     const { resolvedTheme } = useTheme()
-    console.log(JSON.parse(localStorage.getItem("dataProjetos") as string))
     useEffect(()=>{
         if(localStorage.getItem("dataProjetos")){
             setData(JSON.parse(localStorage.getItem("dataProjetos") as string))
