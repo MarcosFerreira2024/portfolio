@@ -25,7 +25,7 @@ function BotaoMenor({
       <Link
         href={href}
         target="_blank"
-        className={`${classes?classes:''}  ${tooltip?"tooltip":""} dark:hover:bg-purple-700 min-w-[39px] min-h-[39px] hover:bg-title transition-all w-[39px] h-[39px] group border-purple-700 dark:border-title border-[2px]   rounded-[7.5px] flex items-center justify-center   dark:bg-transparent    ease-linear duration-300`}
+        className={`${classes?classes:''}  ${tooltip?"md:tooltip":""} dark:hover:bg-purple-700 min-w-[39px] min-h-[39px] hover:bg-title transition-all w-[39px] h-[39px] group border-purple-700 dark:border-title border-[2px]   rounded-[7.5px] flex items-center justify-center   dark:bg-transparent    ease-linear duration-300`}
         {...props}
         data-tooltip={alt}
         onMouseEnter={()=> setTooltip(true)}
