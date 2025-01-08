@@ -37,7 +37,7 @@ function BotaoMaior({
       onMouseEnter={()=> setTooltip(true)}
       onMouseLeave={()=> setTooltip(false)}
      
-      className={`${styles} ${tooltip?"md:tooltip":""} group transition-all ease-linear duration-[300ms] items-center px-2 flex`}
+      className={`${styles} ${tooltip?"tooltip":""} group transition-all ease-linear duration-[300ms] items-center px-2 flex`}
       
     >
       <h1>{label}</h1>
