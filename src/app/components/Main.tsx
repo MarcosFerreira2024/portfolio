@@ -82,13 +82,13 @@ function Main() {
               {sobre && (
                 <p className="text-left absolute top-10 animaTexto max-w-[370px] md:max-w-full   ">
                   Busco uma oportunidade de
-                  <strong className="font-semibold">Estágio</strong>. Possuo
+                  <strong className="font-semibold"> Estágio</strong>. Possuo
                   conhecimento em
                   <strong className="font-semibold"> Desenvolvimento Web</strong>
                   , além de experiência prática em criar sites responsivos
                   focados na experiência dos usuários. Atualmente estou
                   estudando <strong className="font-semibold">Next.js </strong>e
-                  <strong className="font-semibold">Node</strong>. Sou uma
+                  <strong className="font-semibold"> Node</strong>. Sou uma
                   pessoa comunicativa, gosto de trabalhar em equipe e priorizo a
                   qualidade e rapidez no desenvolvimento de softwares.
                 </p>
