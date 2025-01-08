@@ -30,6 +30,7 @@ function BotaoMenor({
         data-tooltip={alt}
         onMouseEnter={()=> setTooltip(true)}
         onMouseLeave={()=> setTooltip(false)}
+        onClickCapture={()=> setTooltip(false)}
       >
         <Image
           className="group-hover:invert  dark:invert-0 dark:brightness-100 group-hover:brightness-0 transition-colors ease-linear duration-300"

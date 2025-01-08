@@ -36,6 +36,7 @@ function BotaoMaior({
       aria-label={label}
       onMouseEnter={()=> setTooltip(true)}
       onMouseLeave={()=> setTooltip(false)}
+      onClickCapture={()=> setTooltip(false)}
      
       className={`${styles} ${tooltip?"tooltip":""} group transition-all ease-linear duration-[300ms] items-center px-2 flex`}
       
