@@ -98,8 +98,8 @@ function Main() {
           </nav>
         </div>
       </section>
-      <section className={`mt-[250px] md:mt-48   pb-5 `}>
-        <div className="max-w-container  gap-3 flex overflow-hidden ">
+      <section className={`mt-[250px] md:mt-48   `}>
+        <div className="max-w-container  gap-3 flex py-5  overflow-x-hidden ">
           <ul
             className={`flex gap-3    ${
               anima ? "animationSkills" : "animationSkillsPaused"

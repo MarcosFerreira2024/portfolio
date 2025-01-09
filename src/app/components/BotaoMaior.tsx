@@ -24,7 +24,7 @@ function BotaoMaior({
   
   ...props
 }: iProps) {
-  const styles = `${classes}  hover:bg-purple-600  hover:text-white dark:hover:bg-title text-subtitle font-subtitle border-title hover:border-purple-700 dark:border-title border-[2px] rounded-[7.5px] h-[39px]`;
+  const styles = `${classes} sombraBotao hover:bg-purple-600  hover:text-white dark:hover:bg-title text-subtitle font-subtitle border-title hover:border-purple-700 dark:border-title border-[2px] rounded-[7.5px] h-[39px]`;
   const [tooltip,setTooltip]= useState<boolean>(false)
 
   return (
