@@ -10,7 +10,8 @@ function Main() {
   const [anima, setAnima] = React.useState(true);
   const [sobre, setSobre] = React.useState(false);
   useEffect(()=>{
-   async function fetchData(){
+    async function fetchData(){
+
       const dataCertificados = await getCertificados()
       const dataProjetos = await getProjetos()
        if(dataCertificados&&dataProjetos){

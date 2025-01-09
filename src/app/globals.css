@@ -175,3 +175,8 @@ body {
     flex-direction: row;
   }
 }
+
+.certificado strong {
+  font-weight: 500;
+  color: var(--title);
+}

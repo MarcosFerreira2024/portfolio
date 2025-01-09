@@ -16,6 +16,7 @@ function Projeto() {
     useEffect(()=>{
         if(localStorage.getItem("dataProjetos")){
             setData(JSON.parse(localStorage.getItem("dataProjetos") as string))
+            localStorage.removeItem("dataProjetos")
             return
         }
             async function fetchData(){
@@ -28,16 +29,19 @@ function Projeto() {
             fetchData()
     },[])
   return (
-    <section className='flex flex-col gap-20 md:gap-0 '>
+    <section className='flex flex-col gap-10 md:gap-20 '>
         {data?data.map((projeto,index)=>(
-            <div key={projeto.id} className=' md:grid animaSection gap-5   flex flex-col  items-center md:items-start  md:grid-cols-2'>
-                <div className='flex flex-col  max-w-[300px] '>
-                    <div className='flex gap-2 mb-2 '>
-                        <BotaoMaior label={projeto.titulo} href={projeto.liveUrl} target="_blank" classes="justify-between transition-colors flex-1 md:flex-initial md:min-w-[240px] md:max-w-[240px] text-subtitle  font-subtitle" alt="Ver Projeto" src="/Geral/Seta.svg" className="" />
-                        <BotaoMenor alt={"Projeto no GitHub"} href={projeto.githubUrl} target="_blank" src='/Main/github.svg'/>
+            <div key={projeto.id} className=' md:grid animaSection gap-10 md:gap-0   flex flex-col  items-center md:items-start  md:grid-cols-2'>
+                <div className='flex justify-between flex-col  md:min-h-[245px]  md:max-h-[245px]  max-w-[307px]  '>
+                    <div className='flex flex-col gap-2 mb-2 pr-5 '>
+                        <div className='flex gap-2'>
+                            <BotaoMaior label={projeto.titulo} href={projeto.liveUrl} target="_blank" classes="justify-between transition-colors flex-1 md:flex-initial md:min-w-[240px] md:max-w-[240px] text-subtitle  font-subtitle" alt="Ver Projeto" src="/Geral/Seta.svg" className="" />
+                            <BotaoMenor alt={"Projeto no GitHub"} href={projeto.githubUrl} target="_blank" src='/Main/github.svg'/>
+                        </div>
+
+                        <h1 className=' text-sm font-subtitle pb-2 max-w-[360px] break-words hyphens-auto'>{projeto.descricao}</h1>
                     </div>
-                    <div className='md:min-h-[280px] md:max-h-[300px]'>
-                        <h1 className='text-subtitle font-title pb-2'>{projeto.descricao}</h1>
+                    <div>
                         <ul className='flex gap-2 items-center'>
                             {projeto.skillsPath.map((skill,i)=>(
                                 <li  key={i} data-tooltip={projeto.skills[i]} className='tooltip'>
@@ -54,7 +58,7 @@ function Projeto() {
                     </div>
 
                 </div>
-            {data.length===index+1?<div className=' col-span-2 text-center'><h1>Mais Projetos No Futuro</h1></div>:null}
+            {data.length===index+1?<div className=' col-span-2 mt-10 text-center'><h1>Mais Projetos No Futuro</h1></div>:null}
             </div>
 
         )):<Loading />}

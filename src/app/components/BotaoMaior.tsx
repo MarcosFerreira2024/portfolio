@@ -38,12 +38,12 @@ function BotaoMaior({
       onMouseLeave={()=> setTooltip(false)}
       onClickCapture={()=> setTooltip(false)}
      
-      className={`${styles} ${tooltip?"tooltip":""} group transition-all ease-linear duration-[300ms] items-center px-2 flex`}
+      className={`${styles} ${tooltip?"tooltip":""} group transition-colors ease-linear duration-[300ms] items-center px-2 flex`}
       
     >
       <h1>{label}</h1>
       <Image
-        className={`group-hover:invert group-hover:brightness-0 max-h-[18px] transition-all ease-in duration-[150ms]`}
+        className={`group-hover:invert group-hover:brightness-0 max-h-[18px] transition-colors ease-in duration-[150ms]`}
         src={src}
         alt={alt}
         width={18}
