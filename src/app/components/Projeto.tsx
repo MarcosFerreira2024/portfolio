@@ -54,7 +54,7 @@ function Projeto() {
                 </div>
                 <div className='flex start'>
                     <div>
-                    <Link href={projeto.liveUrl} target="_blank">  <Image quality={100} alt={projeto.titulo} className='border-title max-h-[209px] md:max-h-[245px]  hover:opacity-90 transition-colors duration-300 ease-in-out border-[2px] md:max-w-[100%] max-w-[300px] object-cover  rounded-[7.5px]' src={projeto.photoDark && resolvedTheme === 'dark'?projeto.photoDark:projeto.photo} width={1440}  height={1440} /></Link>
+                    <Link href={projeto.liveUrl} target="_blank">  <Image quality={100} alt={projeto.titulo} className='border-title max-h-[209px] max-w-[308px] md:max-h-[245px]  hover:opacity-90 transition-colors duration-300 ease-in-out border-[2px] md:max-w-[100%]  object-cover  rounded-[7.5px]' src={projeto.photoDark && resolvedTheme === 'dark'?projeto.photoDark:projeto.photo} width={1440}  height={1440} /></Link>
                     </div>
 
                 </div>
