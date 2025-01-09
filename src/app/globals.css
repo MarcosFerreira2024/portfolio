@@ -120,7 +120,7 @@ body {
   animation-duration: 600ms;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 500px) {
   .tooltip {
     position: relative;
   }
