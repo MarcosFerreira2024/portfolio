@@ -97,7 +97,7 @@ function Main() {
           </nav>
         </div>
       </section>
-      <section className={`mt-[250px] md:mt-28   pb-5 `}>
+      <section className={`mt-[250px] md:mt-48   pb-5 `}>
         <div className="max-w-container  gap-3 flex overflow-hidden ">
           <ul
             className={`flex gap-3    ${
