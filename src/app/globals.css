@@ -166,3 +166,12 @@ body {
     }
   }
 }
+
+.containerBotao {
+  flex-direction: column;
+}
+@media (min-width: 382px) {
+  .containerBotao {
+    flex-direction: row;
+  }
+}

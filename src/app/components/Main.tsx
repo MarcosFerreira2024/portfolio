@@ -23,7 +23,7 @@ function Main() {
   },[])
   return (
     <main>
-      <section className="grid md:grid-cols-2 justify-center gap-5 md:gap-0   mx-auto my-auto ">
+      <section className="grid md:grid-cols-2 justify-center items-center  gap-5 md:gap-0   mx-auto my-auto ">
         <div>
           <Image
             src={`/Main/profile.png`}
@@ -38,12 +38,12 @@ function Main() {
         <div>
           <div>
             <p>Desenvolvedor Full-Stack</p>
-            <h1 className="md:text-title font-title text-5xl ">
+            <h1 className="md:text-title font-title text-4xl ">
               Marcos Vinicius <br /> Ferreira Pinto
             </h1>
           </div>
           <nav className="flex flex-col gap-3   pt-3 ">
-            <div className="flex   flex-wrap gap-[15px] ">
+            <div className="flex containerBotao  flex-wrap gap-[15px] ">
               <BotaoMaior
                 href="/Main/Curriculo-Marcos-Vinicius-Ferreira.pdf"
                 target="_blank"
@@ -73,7 +73,7 @@ function Main() {
             <div className="flex relative ">
               <BotaoMaior
                 onClick={() => setSobre(!sobre)}
-                classes={`w-[206px] justify-between`}
+                classes={`w-[206px] justify-between  `}
                 label={sobre ? "Fechar" : "Sobre Mim"}
                 src={`/Main/sobre.svg`}
                 alt="Resumo"
@@ -97,7 +97,7 @@ function Main() {
           </nav>
         </div>
       </section>
-      <section className={`mt-48 md:mt-28   pb-5 `}>
+      <section className={`mt-[250px] md:mt-28   pb-5 `}>
         <div className="max-w-container  gap-3 flex overflow-hidden ">
           <ul
             className={`flex gap-3    ${
