@@ -16,9 +16,8 @@ function Projeto() {
     useEffect(()=>{
         if(localStorage.getItem("dataProjetos")){
             setData(JSON.parse(localStorage.getItem("dataProjetos") as string))
-            localStorage.removeItem("dataProjetos")
-            return
         }
+        localStorage.removeItem("dataProjetos")
             async function fetchData(){
                 const data = await getProjetos()
                 if(data){

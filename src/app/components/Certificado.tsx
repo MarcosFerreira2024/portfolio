@@ -10,9 +10,8 @@ function Certificado() {
     useEffect(()=>{
         if(localStorage.getItem("dataCertificados")){
             setData(JSON.parse(localStorage.getItem("dataCertificados") as string))
-            localStorage.removeItem("dataCertificados")
-            return
           }
+          localStorage.removeItem("dataCertificados")
             async function fetchData(){
                 const data = await getCertificados()
                 if(data){
