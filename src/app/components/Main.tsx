@@ -81,7 +81,7 @@ function Main() {
                 
               />
               {sobre && (
-                <p className="text-left absolute top-10 animaTexto max-w-[370px] md:max-w-full   ">
+                <p className="text-left absolute top-10 animaTexto break-words hyphens-auto  max-w-full   ">
                   Busco uma oportunidade de
                   <strong className="font-semibold"> Estágio</strong>. Possuo
                   conhecimento em
