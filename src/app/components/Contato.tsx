@@ -18,7 +18,7 @@ function Contato() {
                 <h1 className='text-subtitle group  font-title'>
                     Minhas informações ↓
                 </h1>
-                    <BotaoContato src='/Main/telefone.svg' alt='Meu zap' href={zap} info='(21)9275-2636'  />
+                    <BotaoContato src='/Main/telefone.svg' alt='Meu zap' href={zap} info='(21)98275-2636'  />
                     <BotaoContato src='/Main/github.svg' alt='Meu github' href={github} info='Marcos Ferreira 2024'  />
                     <BotaoContato src='/Main/email.svg' alt='Meu email' href={email} info='marcosfp2021@hotmail.com'  />
                     <BotaoContato src='/Main/linkedin.svg' alt='Meu linkedin' href={linkedin} info='Marcos-Vinicius-Ferreira'  />
