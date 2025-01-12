@@ -2,56 +2,56 @@ export const skills = [
     {
         nome: 'NextJs',
         iconPath: '/Main/nextjs.svg',
-        alt: 'Ícone NextJs',
+        alt: 'NextJs',
     },
     {
         nome: 'React',
         iconPath: '/Main/react.svg',
-        alt: 'Ícone React',
+        alt: 'React',
     },
     {
         nome: 'TypeScript',
         iconPath: '/Main/typescript.svg',
-        alt: 'Ícone TypeScript',
+        alt: 'TypeScript',
     },
     {
         nome: 'NodeJs',
         iconPath: '/Main/nodejs.svg',
-        alt: 'Ícone NodeJs',
+        alt: 'NodeJs',
     },
     {
         nome: "MongoDB",
         iconPath: "/Main/mongodb.svg",
-        alt: "Ícone mongoDB",
+        alt: "MongoDB",
     },
     {
         nome: 'JavaScript',
         iconPath: '/Main/javascript.svg',
-        alt: 'Ícone JavaScript',
+        alt: 'JavaScript',
     },
     {
         nome: 'TailwindCSS',
         iconPath: '/Main/tailwindcss.svg',
-        alt: 'Ícone TailwindCSS',
+        alt: 'TailwindCSS',
     },
     {
         nome: 'CSS',
         iconPath: '/Main/css.svg',
-        alt: 'Ícone CSS',
+        alt: 'CSS',
     },
     {
         nome: 'HTML',
         iconPath: '/Main/html.svg',
-        alt: 'Ícone HTML',
+        alt: 'HTML',
     },
     {
         nome: 'Figma',
         iconPath: '/Main/figma.svg',
-        alt: 'Ícone Figma',
+        alt: 'Figma',
     },
     {
         nome: 'Python',
         iconPath: '/Main/python.svg',
-        alt: 'Ícone Python',
+        alt: 'Python',
     },
 ];
