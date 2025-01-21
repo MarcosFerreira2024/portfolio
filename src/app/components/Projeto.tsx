@@ -44,7 +44,7 @@ function Projeto() {
                         <ul className='flex gap-2 items-center'>
                             {projeto.skillsPath.map((skill,i)=>(
                                 <li  key={i} data-tooltip={projeto.skills[i]} className='tooltip'>
-                                    <Image alt={projeto.skills[i]}  className='max-h-[18px]    dark:hover:brightness-0 hover:brightness-75 duration-300 ease-in-out dark:hover:invert min-h-[18px]' src={skill} width={18} height={18} />
+                                    <Image alt={projeto.skills[i]}  className='max-h-[18px]    dark:hover:brightness-0 hover:brightness-75 brightness-100 invert duration-300 ease-in-out dark:hover:invert min-h-[18px]' src={skill} width={18} height={18} />
                                 </li>
                             ))}
                         </ul>
