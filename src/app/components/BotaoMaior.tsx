@@ -24,7 +24,7 @@ function BotaoMaior({
   
   ...props
 }: iProps) {
-  const styles = `${classes} sombraBotao hover:bg-purple-600  hover:text-white dark:hover:bg-title text-subtitle font-subtitle border-title hover:border-purple-700 dark:border-title border-[2px] rounded-[7.5px] h-[39px]`;
+  const styles = `${classes} sombraBotao hover:bg-slate-950  hover:text-slate-50 dark:hover:text-slate-950   dark:hover:bg-title text-subtitle font-subtitle border-title hover:border-title dark:border-title border-[2px] rounded-[7.5px] h-[39px]`;
   const [tooltip,setTooltip]= useState<boolean>(false)
 
   return (
@@ -38,12 +38,12 @@ function BotaoMaior({
       onMouseLeave={()=> setTooltip(false)}
       onClickCapture={()=> setTooltip(false)}
      
-      className={`${styles} ${tooltip?"tooltip":""} group transition-colors ease-linear duration-[300ms] items-center px-2 flex`}
+      className={`${styles} ${tooltip?"tooltip":""} group  transition-colors ease-linear duration-[300ms] items-center px-2 flex`}
       
     >
       <h1>{label}</h1>
       <Image
-        className={`group-hover:invert group-hover:brightness-0 max-h-[18px] transition-colors ease-in duration-[150ms]`}
+        className={`dark:group-hover:brightness-0 dark:brightness-100 brightness-0 group-hover:brightness-100  max-h-[18px] transition-colors ease-in duration-[150ms]`}
         src={src}
         alt={alt}
         width={18}

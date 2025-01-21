@@ -4,9 +4,9 @@
 
 :root {
   --background: #fdfdfd;
-  --title: #9333ea;
-  --subtitle: #a855f7;
-  --border: #7e22ce;
+  --title: #020617;
+  --subtitle: #0F172A;
+  --border: #1E293B;
   --font-title: 2.5rem;
   --font-subtitle: 1rem;
   --container: 45.25rem;
@@ -14,10 +14,10 @@
 }
 
 .dark {
-  --background: #0c0a09;
-  --title: #7e22ce;
-  --subtitle: #9333ea;
-  --border: #5b21b6;
+  --background: #020617;
+  --title: #F8FAFC;
+  --subtitle: #E2E8F0;
+  --border: #1E293B;
   --menu: rgb(255, 255, 255, 0.085);
 }
 

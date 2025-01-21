@@ -26,7 +26,7 @@ function Contato() {
             </div>
             <div className='md:flex hidden flex-col  items-center justify-between gap-5 p-10'>
                 <div className='flex flex-col gap-2 items-center '>
-                    <p className='text-subtitle font-title dark:hover:text-purple-500 hover:text-purple-800 transition-colors duration-150 ease-in-out'>#Open to Work</p>
+                    <p className='text-subtitle font-title dark:hover:text-white hover:text-slate-600 transition-colors duration-150 ease-in-out'>#Open to Work</p>
                     <Image src={`/Main/profile.png`} quality={100}priority alt="profile picture" height={200} width={200} className="w-[150px] h-[150px] transition-none hover:opacity-95 hover:rotate-1 transition-all ease-linear duration-300 rounded-full mx-auto md:mx-0   "/>
 
                 </div>
