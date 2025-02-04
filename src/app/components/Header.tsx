@@ -41,7 +41,7 @@ function Header() {
         {/*menu mobile */}
         <div
           ref={menu}
-          className="min-w-[100vw] md:hidden transition-colors ease-in-out duration-300 translate-x-[100vw] max-w-container flex absolute top-0 left-0 right-0    mx-auto  h-[100vh] "
+          className="min-w-[100vw] md:hidden  translate-x-[100vw] max-w-container flex absolute top-0 left-0 right-0    mx-auto  h-[100vh] "
         >
           <div className="flex-1  " onClick={handleMenu}></div>
           {/*itens Navbar do menu mobile */}
@@ -52,14 +52,14 @@ function Header() {
                   src={`/Header/close.svg`}
                   width={18}
                   height={18}
-                  className="hover:scale-105 invert-0 brightness-0 dark:brightness-100 cursor-pointer transition-colors ease-in-out duration-300"
+                  className="hover:scale-105 invert-0 brightness-0 dark:brightness-100 cursor-pointer "
                   alt="close"
                 />
               </div>
               {liNav.map((data, id) => (
                 <li key={id}>
                   <Link  href={`/${data.slug}`}>
-                   <h1  className={`${data.slug===pathName.replace("/","")?"underline underline-offset-[6px] decoration-[1.5px] ":""}  text-xl hover:text-slate-600 dark:hover:text-white    transition-colors ease-in-out duration-300 `}>
+                   <h1  className={`${data.slug===pathName.replace("/","")?"underline underline-offset-[6px] decoration-[1.5px] ":""}  text-xl hover:text-slate-600 dark:hover:text-white     `}>
                       {data.text}
                    </h1>
                   </Link>
@@ -82,7 +82,7 @@ function Header() {
           {liNav.map((data, id) => (
             <li key={id}>
               <Link href={`/${data.slug}`}>
-                <h1  className={`${data.slug===pathName.replace("/","")?"underline underline-offset-[6px] decoration-[1.5px] ":""} hover:text-slate-600 dark:hover:text-white transition-colors ease-in-out duration-300 `}>
+                <h1  className={`${data.slug===pathName.replace("/","")?"underline underline-offset-[6px] decoration-[1.5px] ":""} hover:text-slate-600 dark:hover:text-white  `}>
                   {data.text}
                 </h1>
               </Link>

@@ -31,9 +31,9 @@ function Projeto() {
     <section className='flex flex-col gap-10 md:gap-20 '>
         {data?data.map((projeto,index)=>(
             <div key={projeto.id} className=' md:grid animaSection gap-10 md:gap-0   flex flex-col  items-center md:items-start  md:grid-cols-2'>
-                <div className='flex justify-between flex-col  max-w-[307px] lg:max-w-[319px] min-h-[301px]  '>
+                <div className='flex justify-between flex-col  w-full  max-w-[319px] md:min-h-[301px]  '>
                     <div className='flex flex-col gap-2 mb-2 pr-5  '>
-                        <div className='flex justify-between  '>
+                        <div className='flex justify-between  gap-2 md:gap-0'>
                             <BotaoMaior label={projeto.titulo} href={projeto.liveUrl} target="_blank" classes="justify-between transition-colors flex-1 md:flex-initial md:min-w-[240px] md:max-w-[240px] text-subtitle  font-subtitle" alt="Ver Projeto" src="/Geral/Seta.svg" className="" />
                             <BotaoMenor alt={"Projeto no GitHub"} href={projeto.githubUrl} target="_blank" src='/Main/github.svg'/>
                         </div>
