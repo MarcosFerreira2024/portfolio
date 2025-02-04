@@ -31,9 +31,9 @@ function Projeto() {
     <section className='flex flex-col gap-10 md:gap-20 '>
         {data?data.map((projeto,index)=>(
             <div key={projeto.id} className=' md:grid animaSection gap-10 md:gap-0   flex flex-col  items-center md:items-start  md:grid-cols-2'>
-                <div className='flex justify-between flex-col  md:min-h-[245px]  md:max-h-[245px]  max-w-[307px]  '>
-                    <div className='flex flex-col gap-2 mb-2 pr-5 '>
-                        <div className='flex gap-2'>
+                <div className='flex justify-between flex-col  max-w-[307px] lg:max-w-[319px] min-h-[301px]  '>
+                    <div className='flex flex-col gap-2 mb-2 pr-5  '>
+                        <div className='flex justify-between  '>
                             <BotaoMaior label={projeto.titulo} href={projeto.liveUrl} target="_blank" classes="justify-between transition-colors flex-1 md:flex-initial md:min-w-[240px] md:max-w-[240px] text-subtitle  font-subtitle" alt="Ver Projeto" src="/Geral/Seta.svg" className="" />
                             <BotaoMenor alt={"Projeto no GitHub"} href={projeto.githubUrl} target="_blank" src='/Main/github.svg'/>
                         </div>
@@ -52,8 +52,8 @@ function Projeto() {
                     </div>
                 </div>
                 <div className='flex start'>
-                    <div className=' max-h-[209px] max-w-[308px] md:max-h-[245px] md:max-w-[100%]'>
-                    <Link href={projeto.liveUrl} target="_blank">  <Image quality={100} alt={projeto.titulo} className='border-title object-contain border-[2px] rounded-[7.5px]  hover:opacity-90 transition-colors duration-300 ease-in-out ' src={projeto.photoDark && resolvedTheme === 'dark'?projeto.photoDark:projeto.photo} width={1420}  height={1080} /></Link>
+                    <div className='min-h-full '>
+                    <Link href={projeto.liveUrl} target="_blank">  <Image quality={100} alt={projeto.titulo} className='border-title border-[2px] rounded-[7.5px]  h-full w-full max-w-[307px] md:max-w-[400px] md:min-h-[301px]  object-cover  hover:opacity-90 transition-colors duration-300 ease-in-out ' src={projeto.photoDark && resolvedTheme === 'dark'?projeto.photoDark:projeto.photo} width={1920}  height={1080} /></Link>
                     </div>
 
                 </div>
